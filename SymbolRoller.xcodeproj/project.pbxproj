@@ -83,6 +83,8 @@
 			dependencies = (
 			);
 			name = SymbolRoller;
+			packageProductDependencies = (
+			);
 			productName = SymbolRoller;
 			productReference = 7660B0DD28632C81006AEBFB /* SymbolRoller.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +113,8 @@
 				Base,
 			);
 			mainGroup = 7660B0D428632C81006AEBFB;
+			packageReferences = (
+			);
 			productRefGroup = 7660B0DE28632C81006AEBFB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
