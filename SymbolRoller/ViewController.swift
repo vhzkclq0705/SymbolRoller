@@ -24,9 +24,17 @@ class ViewController: UIViewController {
 
 extension ViewController {
     func reloadItems() {
-        let num = Int.random(in: 0...symbols.count - 1)
-        symbolImageView.image = UIImage(systemName: symbols[num])
-        symbolLabel.text = symbols[num]
+//        // 기존 코드
+//        let num = Int.random(in: 0...symbols.count - 1)
+//        symbolImageView.image = UIImage(systemName: symbols[num])
+//        symbolLabel.text = symbols[num]
+        
+        // 새로 알게된 코드
+        // 배열의 랜덤 아이템을 가져올 때, .randomElement() 메소드를 사용할 수 있다.
+        // optional이기 때문에 '!'를 통해 unwrapping.
+        let symbol = symbols.randomElement()!
+        symbolImageView.image = UIImage(systemName: symbol)
+        symbolLabel.text = symbol
     }
     
     @IBAction func didTapReloadButton(_ sender: Any) {
