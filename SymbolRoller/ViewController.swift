@@ -24,7 +24,7 @@ class ViewController: UIViewController {
 
 extension ViewController {
     func reloadItems() {
-//        // 기존 코드
+//        // 기존 코드 
 //        let num = Int.random(in: 0...symbols.count - 1)
 //        symbolImageView.image = UIImage(systemName: symbols[num])
 //        symbolLabel.text = symbols[num]
